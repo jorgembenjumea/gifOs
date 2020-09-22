@@ -1,0 +1,17 @@
+[33mcommit 5bc4d29366a91668177e911f49c2b728d123aa8e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jorge Mario <jorgembenjumea@gmail.com>
+Date:   Sun May 3 16:13:03 2020 -0500
+
+    se agrego autocompletado del buscador v1
+
+[33mcommit c78e9955f8a2319a34a7edd40f9a80f704351dbb[m
+Author: Jorge Mario <jorgembenjumea@gmail.com>
+Date:   Sat Apr 18 11:54:42 2020 -0500
+
+    carpetas js y css
+
+[33mcommit 122932a205f5c273f77e9b23e12130fbcef7f42a[m
+Author: Jorge Mario <jorgembenjumea@gmail.com>
+Date:   Sat Apr 18 10:28:29 2020 -0500
+
+    Empezando el Proyecto GifOs

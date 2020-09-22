@@ -1,65 +1,197 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- Key: hZFijLy5ddrIKkhAz5sv38TYIl1x4qFp -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GifOs</title>
-    <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./sets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <p class="barra-1">Bienvenidos a GifOs.com ------------Donde los Gif Estan//////// Número de visitas:
+        12.345.876</p>
 
-    <div class="contenedor">
-
+    <div class="contenedor grid">
         <header>
-            <nav>
-                <div id="logo"></div>
-                <div>
-                    <div class="botones-inline">
-                        <button class="button create-gifOS">Crear gifOS</button>
+            <nav class="grid">
+
+
+                <div class="headers">
+
+                    <img src="/sets/img/gifOF_logo.png" alt="logo de GifOs" class="logo">
+
+                    <div class="bar">
+
+                        <button class="btn bUno"><span>Crear Gifos</span> </button>
+                        <div class="menu">
+                            <div class="list" onmouseout="hide()" onmouseover="show()">
+                                <button class="btn bDos"><span>Elegir Tema</span> </button>
+                                <button id="bTres" class="btn bTres"><img src="/sets/img/dropdown.svg"
+                                        alt="dropdown"></button>
+
+
+                            </div>
+
+                            <div id="style-list" onmouseout="hide()" onmouseover="show()">
+                                <p class="sailor-day" onclick=saylor_day()>Sailor Day</p>
+                                <p class="sailor-night" onclick=saylor_night()>Sailor Night</p>
+                            </div>
+
+                        </div>
+
+
                     </div>
-                    <div class="botones-inline">
-                        <button class="button elegir-tema">Elegir Tema</button>
-                    </div>
-                    <a href="otraPag.html" class="mis-gifos">Mis GIFos</a>
+
                 </div>
             </nav>
-        </header>
 
-
-        <div class="search-container box">
-            <div class="box-header">Buscar</div>
-            <div class="search-wrapper flex-center-content">
-
-                
-                    <div class="autocompletar">
-                        <input autocomplete="off" class="search-bar" placeholder="Buscá gifs y más" value=""
-                            id="search" />
+            <section class='grid'>
+                <div class="search">
+                    <span class="title-search">Buscar</span>
+                    <div class="cSearch">
+                        <input class="inpt-Uno" id="search" type="text"
+                            placeholder=" Busca gifs, hashtags, temas, busca lo que quieras…">
+                        <button class="btn bCinco" id="buscar">
+                            <img src="/sets/img/lupa_inactive.svg" alt="gifos">
+                            <span class="buscarUno" click=resultados()>Buscar</span>
+                        </button>
                     </div>
-           
-
-                <div class="search-button button button-disabled" id="btnSearch">
-                    <div class="search-icon"></div>
-                    <span>Buscar</span>
-
-
-
-
-
-
-
 
                 </div>
 
-
+            </section>
+            <section class='grid'>
+            <div class="sugerencias-busqueda">
+                <button class="button-sugerencia ocultar">Sugerencia1</button>
+                <button class="button-sugerencia ocultar">Sugerencia2</button>
+                <button class="button-sugerencia ocultar">Sugerencia3</button>
             </div>
-            <div class="out"></div>
+        </section>
+
+            <div class="grid">
+                <div class="results" id="results">
+
+                </div>
+            </div>
+
+
+
+    </div>
+
+
+    </header>
+
+
+    <main>
+        <div class="grid">
+            <section class="sugerencias">
+                <input class="inpt-sugerencias" type="text" name="" id="" placeholder=" Sugerencias" disabled>
+
+                <div class="boxs">
+                    <div class="box">
+                        <p class="title-gif">titulo</p>
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <p class="title-gif">titulo</p>
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <p class="title-gif">titulo</p>
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <p class="title-gif">titulo4</p>
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <p class="title-gif">titulo</p>
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <p class="title-gif">titulo</p>
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <p class="title-gif">titulo</p>
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <p class="title-gif">titulo4</p>
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section class="tendencias">
+                <input class="inpt-sugerencias" type="text" name="" id="" placeholder="Tendencias" disabled>
+
+                <div class="boxs">
+                    <div class="box">
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                    <div class="box">
+
+                        <img src="https://media1.giphy.com/media/sgThSv9BGHhyo/giphy.gif?cid=726833907qjlrcgoodcbxcrub4vozy6h2m2isavoxgp6h6e3&rid=giphy.gif"
+                            alt="">
+                    </div>
+                </div>
+
+
+            </section>
+
+
         </div>
+    </main>
+    </div>
+
+
+
+
+
+
+    <script src="/sets/js/scripts.js"></script>
 
 </body>
-<script src="./js/script.js"></script>
 
+</html>
 </html>

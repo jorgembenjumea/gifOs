@@ -1,0 +1,33 @@
+@import'headers';
+@import'main';
+@import'variables';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'ChakraPetch-Regular';
+    background: #f8e2f6;
+    transition: .4s ease all;
+
+    &.sailor-night-tem{
+        background:#140434
+    }
+
+}
+
+.contenedor {
+    grid-column: 2/12;
+    margin-top: 15px;
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    max-width: 1738px;
+}

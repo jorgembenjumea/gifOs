@@ -1,0 +1,84 @@
+.sugerencias-busqueda {
+    grid-column: 2/12;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+
+//Galeri item
+.itemGif{
+    width: 100%;
+    height: 100%;
+}
+
+
+//GAleri conatiner
+.results{
+    grid-column: 2/12;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    //grid-auto-rows: 150px;
+    
+   
+}
+//Galeri_imagen
+.item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    border-style: solid;
+    border-color: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+    
+}
+
+.search{
+
+    width: 100%;
+}
+.sugerencias{
+    grid-column: 2/12;
+    width: 100%;
+    margin-top: 60px;
+    
+}
+.boxs{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-gap: 10px;
+
+    .box img{
+        width: 100%;
+    }
+
+
+}
+.inpt-sugerencias{
+    width: 100%;
+    max-width: 1200px;
+    height: 32px;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+
+}
+.title-gif{
+    background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
+    
+    body.sailor-night-tem & {
+        background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+        
+    }
+}
+
+.tendencias{
+    grid-column: 2/12;
+    width: 100%;
+    margin-top: 60px;
+    
+}

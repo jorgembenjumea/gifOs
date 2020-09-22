@@ -1,0 +1,221 @@
+.barra-1 {
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
+  width: 100%;
+  text-align: center; }
+  .barra-1 p {
+    padding: 0px;
+    margin: 0px; }
+  body.sailor-night-tem .barra-1 {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    box-shadow: 0 1px 0 0 #110038; }
+
+header {
+  grid-column: 1/13; }
+
+.headers {
+  grid-column: 2/12;
+  margin-top: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  grid-column: 2/5;
+  display: inline-block;
+  height: 64px;
+  width: 102px; }
+
+.bar {
+  display: flex;
+  position: relative; }
+
+.btn {
+  height: 36px;
+  align-items: center;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  padding: 4px;
+  cursor: pointer;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px; }
+  .btn :hover {
+    border: 1px dashed #110038;
+    padding: 4px; }
+  body.sailor-night-tem .btn {
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0; }
+
+.bUno {
+  margin-right: 20px;
+  width: 131px; }
+
+.bDos {
+  width: 127px; }
+
+.bTres {
+  width: 30px; }
+
+#style-list {
+  background: #E6E6E6;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 51%;
+  top: 36px;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4; }
+
+.menu {
+  display: flex;
+  flex-direction: column; }
+
+.list {
+  display: flex; }
+
+.sailor-day {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  font-family: ChakraPetch-Regular;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding: 4px;
+  margin: 6px; }
+  .sailor-day:hover {
+    background: #f7c9f3; }
+
+.sailor-night {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  font-family: ChakraPetch-Regular;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding: 4px;
+  margin: 6px; }
+  .sailor-night:hover {
+    background: #EE3EFE; }
+
+.bCuatro {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  background: #f8e2f6;
+  margin: 12px; }
+  .bCuatro ::first-letter {
+    text-decoration: underline;
+    line-height: 2; }
+
+.search {
+  grid-column: 2/12;
+  display: flex;
+  flex-direction: column;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+
+.cSearch {
+  display: flex;
+  padding: 10px; }
+
+.inpt-Uno {
+  width: 100%; }
+
+.bCinco {
+  width: 102px;
+  background: #E6E6E6;
+  color: #B4B4B4; }
+
+.title-search {
+  padding: 2px;
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
+  box-shadow: inset -2px -0px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  color: #ffffff;
+  font-weight: bold; }
+  body.sailor-night-tem .title-search {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+
+.itemGif {
+  width: 100%;
+  height: 100%; }
+
+.results {
+  grid-column: 2/12;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  border-style: solid;
+  border-color: #e6e6e6;
+  box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
+
+.search {
+  width: 100%; }
+
+.sugerencias {
+  grid-column: 2/12;
+  width: 100%;
+  margin-top: 60px; }
+
+.boxs {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; }
+  .boxs .box img {
+    width: 100%; }
+
+.inpt-sugerencias {
+  width: 100%;
+  max-width: 1200px;
+  height: 32px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D; }
+
+.title-gif {
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3); }
+  body.sailor-night-tem .title-gif {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+
+.tendencias {
+  grid-column: 2/12;
+  width: 100%;
+  margin-top: 60px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'ChakraPetch-Regular';
+  background: #f8e2f6;
+  transition: .4s ease all; }
+  body.sailor-night-tem {
+    background: #140434; }
+
+.contenedor {
+  grid-column: 2/12;
+  margin-top: 15px;
+  display: flex; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  max-width: 1738px; }
+
+/*# sourceMappingURL=style.css.map */
