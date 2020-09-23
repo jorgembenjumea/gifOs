@@ -143,6 +143,28 @@ header {
   body.sailor-night-tem .title-search {
     background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
 
+.sugerencias-busqueda {
+  grid-column: 2/12;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4; }
+
+.button-sugerencia {
+  text-align: left;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  font-family: ChakraPetch-Regular;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding: 4px;
+  margin: 6px; }
+  .button-sugerencia:hover {
+    background: #f7c9f3; }
+
 .itemGif {
   width: 100%;
   height: 100%; }
